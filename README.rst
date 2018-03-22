@@ -1,32 +1,20 @@
-statr - trustworthy statistic in Python
-=======================================
+statr - trustworthy statistic in C
+==================================
 
 Building
 --------
 
-Call in `./source`::
-
-  make header
-  make library
-
+Use `Makefile`:
 
 Usage
 -----
-Example::
 
-  import statr
-
-  # try for example
-  set_seed(10)
-  statr.runif(10, [0, 9], 10)
+Find out more in *Docs* (Coming Soon).
 
 Testing
 -------
 
-You can run example unit tests by::
-
-  python test/uniform.py
-
+Coming soon
 
 Documentation:
 --------------

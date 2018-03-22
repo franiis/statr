@@ -19,7 +19,7 @@
 #ifndef STATR_H
 #define STATR_H
 
-#include "utils/rng.h"
-#include "distr/distr.h"
+#include "rng.h"
+#include "distr.h"
 
 #endif

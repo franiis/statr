@@ -1,6 +1,7 @@
-#include "array_utils.h"
-#include "prech.h"
+#include <stdlib.h>
+#include <stddef.h>
 #include "math.h"
+#include "array_utils.h"
 
 void fillWithNAN(double *arr, int arr_len)
 {
