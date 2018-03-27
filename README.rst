@@ -1,5 +1,5 @@
-statr - trustworthy statistic in C
-==================================
+statr - trustworthy statistics in C
+===================================
 
 .. image:: https://travis-ci.org/franiis/statr.svg?branch=master
     :target: https://travis-ci.org/franiis/statr
@@ -26,6 +26,6 @@ Coming soon
 Documentation:
 --------------
 
-Coming soon
+WIP: https://franiis.github.io/statr/
 
  
