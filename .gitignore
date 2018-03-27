@@ -2,4 +2,3 @@
 .Rhistory
 .vscode
 build/*
-!build/libstatr.a
