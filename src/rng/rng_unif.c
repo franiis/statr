@@ -189,8 +189,8 @@ static void MT_sgenrand(RNG_state_t *state, unsigned int internal_seed)
 static double MT_genrand(RNG_state_t *state)
 {
     unsigned int *mt = state->state + 1;
-    Int32 y;
-    static unsigned int mag01[2]={0x0, MATRIX_A};
+    unsigned int y;
+    static unsigned int mag01[2] = {0x0, MATRIX_A};
     /* mag01[x] = x * MATRIX_A  for x=0,1 */
 
     int mti = state->state[0];
@@ -230,6 +230,7 @@ static double MT_genrand(RNG_state_t *state)
 /* =====================================================*/
 // from /src/main/times.c - R Project
 
+// TODO: Probably in future something like autoheader should be added to properlu use other methods
 unsigned int TimeToSeed(void)
 {
     unsigned int seed, pid = getpid();
@@ -247,7 +248,7 @@ unsigned int TimeToSeed(void)
     }
 #else
     /* C89, so must work */
-    seed = (Int32) time(NULL);
+    seed = (unsigned int) time(NULL);
 #endif
     seed ^= (pid <<16);
     return seed;
