@@ -1,0 +1,13 @@
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/html/rng_8h__dep__incl.dot" -Tpng -o "/home/piotr/Projects/statr/docs/html/rng_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/latex/rng_8h__dep__incl.dot" -Tpdf -o "/home/piotr/Projects/statr/docs/latex/rng_8h__dep__incl.pdf"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/html/graph_legend.dot" -Tpng -o "/home/piotr/Projects/statr/docs/html/graph_legend.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/html/dir_8eedcadd87ec2a258b6b8bb1ba4266a3_dep.dot" -Tpng -o "/home/piotr/Projects/statr/docs/html/dir_8eedcadd87ec2a258b6b8bb1ba4266a3_dep.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/latex/dir_8eedcadd87ec2a258b6b8bb1ba4266a3_dep.dot" -Tpdf -o "/home/piotr/Projects/statr/docs/latex/dir_8eedcadd87ec2a258b6b8bb1ba4266a3_dep.pdf"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/html/dir_66f3777be84fd2bcdfa8304594331858_dep.dot" -Tpng -o "/home/piotr/Projects/statr/docs/html/dir_66f3777be84fd2bcdfa8304594331858_dep.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/latex/dir_66f3777be84fd2bcdfa8304594331858_dep.dot" -Tpdf -o "/home/piotr/Projects/statr/docs/latex/dir_66f3777be84fd2bcdfa8304594331858_dep.pdf"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/html/dir_bf1fdfc2857f13283c765651ba269981_dep.dot" -Tpng -o "/home/piotr/Projects/statr/docs/html/dir_bf1fdfc2857f13283c765651ba269981_dep.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/home/piotr/Projects/statr/docs/latex/dir_bf1fdfc2857f13283c765651ba269981_dep.dot" -Tpdf -o "/home/piotr/Projects/statr/docs/latex/dir_bf1fdfc2857f13283c765651ba269981_dep.pdf"'
+error: problems opening map file /home/piotr/Projects/statr/docs/html/rng_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problem writing FIG 0 figure!

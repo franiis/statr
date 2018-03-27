@@ -1,0 +1,10 @@
+digraph "statr" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_aea93e1f887ae90cd52d7161a7c54d5a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_aea93e1f887ae90cd52d7161a7c54d5a.html"];
+    dir_aea93e1f887ae90cd52d7161a7c54d5a [shape=plaintext label="statr"];
+    dir_bf1fdfc2857f13283c765651ba269981 [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_bf1fdfc2857f13283c765651ba269981.html"];
+  }
+}
