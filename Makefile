@@ -9,7 +9,7 @@ BUILD_DIR := $(addprefix build/,$(MODULES))
 SRC       := $(foreach sdir,$(SRC_DIR),$(wildcard $(sdir)/*.c))
 OBJ       := $(patsubst src/%.c,build/%.o,$(SRC))
 INCLUDES  := $(addprefix -I,$(SRC_DIR))
-C_OPTIONS := -g -Wall
+C_OPTIONS := -g -fPIC -Wall -lm
 
 vpath %.c $(SRC_DIR)
 
