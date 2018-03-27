@@ -9,4 +9,7 @@
 
 double runif(RNG_state_t **state, double a, double b);
 
+double rnorm(RNG_state_t **state, double mu, double sigma);
+
+
 #endif

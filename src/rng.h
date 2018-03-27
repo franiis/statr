@@ -33,6 +33,7 @@ struct rng_state {
 // You can pass struct with *state set to null - state will be generated based on seed value (not 0)
 // You can pass seed and state returned from previous unif_rand call - it will continue using the same setup.
 double unif_rand(RNG_state_t **state);
+double norm_rand(RNG_state_t **state);
 
 RNG_state_t* create_RNG_state(unsigned int seed);
 void delete_RNG_state(RNG_state_t *state);
