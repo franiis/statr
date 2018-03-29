@@ -190,7 +190,7 @@ static double MT_genrand(RNG_state_t *state)
 {
     unsigned int *mt = state->state + 1;
     unsigned int y;
-    static unsigned int mag01[2] = {0x0, MATRIX_A};
+    unsigned int mag01[2] = {0x0, MATRIX_A};
     /* mag01[x] = x * MATRIX_A  for x=0,1 */
 
     int mti = state->state[0];
@@ -230,26 +230,26 @@ static double MT_genrand(RNG_state_t *state)
 /* =====================================================*/
 // from /src/main/times.c - R Project
 
-// TODO: Probably in future something like autoheader should be added to properlu use other methods
+// TODO: Probably in future something like autoheader should be added to properlu use other methods of time generation
 unsigned int TimeToSeed(void)
 {
     unsigned int seed, pid = getpid();
-#if defined(HAVE_CLOCK_GETTIME) && defined(CLOCK_REALTIME)
-    {
-	struct timespec tp;
-	clock_gettime(CLOCK_REALTIME, &tp);
-	seed = (unsigned int)(((uint_least64_t) tp.tv_nsec << 16) ^ tp.tv_sec);
-    }
-#elif defined(HAVE_GETTIMEOFDAY)
-    {
-	struct timeval tv;
-	gettimeofday (&tv, NULL);
-	seed = (unsigned int)(((uint_least64_t) tv.tv_usec << 16) ^ tv.tv_sec);
-    }
-#else
+// #if defined(HAVE_CLOCK_GETTIME) && defined(CLOCK_REALTIME)
+//     {
+// 	struct timespec tp;
+// 	clock_gettime(CLOCK_REALTIME, &tp);
+// 	seed = (unsigned int)(((uint_least64_t) tp.tv_nsec << 16) ^ tp.tv_sec);
+//     }
+// #elif defined(HAVE_GETTIMEOFDAY)
+//     {
+// 	struct timeval tv;
+// 	gettimeofday (&tv, NULL);
+// 	seed = (unsigned int)(((uint_least64_t) tv.tv_usec << 16) ^ tv.tv_sec);
+//     }
+// #else
     /* C89, so must work */
     seed = (unsigned int) time(NULL);
-#endif
+//#endif
     seed ^= (pid <<16);
     return seed;
 }

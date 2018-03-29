@@ -40,11 +40,11 @@
  * 
  * RNG_state_t was created to support Mersenne-Twister method. 
  */
-struct rng_state {
+typedef struct rng_state {
     unsigned int seed; /**< basic seed for MT pseudorandom generator */
     unsigned int *state; /**< internal state of MT generator. Should not be modified. */
     int MT_index; /**< internal data from MT generator. It's marks index in state array to be used */
-} typedef RNG_state_t;
+} RNG_state_t;
 
 /**
  * @brief Generates pseudorandom number based on Mersenne-Twister algorithm from uniform distribution.
