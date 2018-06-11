@@ -16,7 +16,7 @@ Use `Makefile`
 Usage
 -----
 
-Find out more in *Docs* (Coming Soon).
+Find out more in *Docs* (Coming Soon - WIP below).
 
 Testing
 -------
